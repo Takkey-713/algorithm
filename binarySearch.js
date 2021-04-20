@@ -1,6 +1,10 @@
 const readlineSync = require("readline-sync");
 
 const binarySearch = (arg, num) => {
+  if (!arg.includes(num)) {
+    console.log(`${num}は存在しません。`);
+    return;
+  }
   let head = 0;
   let tail = arg.length;
   while (head < tail) {
