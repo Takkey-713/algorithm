@@ -1,7 +1,7 @@
 const prime = () => {
   const number = 1000;
   for (i = 2; i < number; i++) {
-    for (j = 2; j < 1000; j++) {
+    for (j = 2; j < number; j++) {
       if (i % j == 0) {
         break;
         //2以上の自然数同士を総当たりで剰余計算し、割り切れた場合処理を中断する
